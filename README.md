@@ -6,4 +6,4 @@ Cool site to check out for git repo help:
 
 http://dont-be-afraid-to-commit.readthedocs.io/en/latest/git/commandlinegit.html
 
-https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/inheritance
+Idea: Create a javascript game that peers can download and unzip to run index.html.
