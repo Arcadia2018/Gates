@@ -6,4 +6,7 @@ Cool site to check out for git repo help:
 
 http://dont-be-afraid-to-commit.readthedocs.io/en/latest/git/commandlinegit.html
 
-Idea: Create a javascript game that peers can download and unzip to run index.html.
+Idea:
+
+A game based off of boolean logic.
+Includes Logic gates AND, OR, NOR, XNOR, NAND and XOR.
