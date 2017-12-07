@@ -12,7 +12,7 @@ public class Chess {
         String color = "white";
 
         boolean drawAvailable = false;
-        
+
         while(true){
 
             System.out.println(gameBoard);
@@ -47,27 +47,10 @@ public class Chess {
             Piece[][] oldBoard = gameBoard.board.clone();
 
             if(!gameBoard.canAnyPieceMakeAnyMove(colorToggle(color))){
-//                if(gameBoard.isInCheck(colorToggle(color))){
-//                    System.out.println("Checkmate. " + color + " wins");
-//                    System.out.println("Game over!");
-//                }else{
-//                    System.out.println("Stalemate!");
-//                }
-//                return;
+
             }
 
             gameBoard.board = oldBoard;
-
-//            if(gameBoard.isInCheck(colorToggle(color))){
-//                System.out.println(colorToggle(color) + " is in check.");
-//            }
-
-//            if(move.contains("draw?")){
-//                drawAvailable = true;
-//            }
-
-            //Now I have to check to see if either player is in check or checkmate
-            //I also have to see if there is a stalemate
 
             color = colorToggle(color);
 

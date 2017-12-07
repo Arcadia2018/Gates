@@ -14,7 +14,7 @@ public class NAND extends Piece{
 
 		if(Math.abs(newRow - currentRow) > 1 || Math.abs(newCol - currentCol) > 1){
 			return 3;
-			//hasMoved = true;
+	
 		} else {
 			if(hasMoved){
 				return 3;
@@ -57,7 +57,7 @@ public class NAND extends Piece{
 	}
 
 	public String toString(){
-		return color.charAt(0) + "!&";	
+		return color.charAt(0) + "!&";
 	}
 
 	public String oppColor(){
@@ -66,7 +66,7 @@ public class NAND extends Piece{
 			return "black";
 		else if (this.color != null && this.color == "black")
 			return "white";
-		else 
+		else
 			return null;
 	}
 

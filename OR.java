@@ -11,12 +11,12 @@ public class OR extends Piece{
 
 	@Override
 	//make this into an int, having 0, 1, and 2 as options
-	//saying 
+	//saying
 	public int validateMove(Piece[][] board, int[][] refBoard, int currentRow, int currentCol, int newRow, int newCol) {
 
 		if(Math.abs(newRow - currentRow) > 1 || Math.abs(newCol - currentCol) > 1){
 			return 3;
-			//hasMoved = true;
+	
 		} else {
 			if(hasMoved){
 				return 3;
@@ -59,7 +59,7 @@ public class OR extends Piece{
 	}
 
 	public String toString(){
-		return " " + color.charAt(0) + "|";	
+		return " " + color.charAt(0) + "|";
 	}
 
 	public String oppColor(){
@@ -68,7 +68,7 @@ public class OR extends Piece{
 			return "black";
 		else if (this.color != null && this.color == "black")
 			return "white";
-		else 
+		else
 			return null;
 	}
 	public boolean pieceValue(boolean yourVal, boolean oppVal){

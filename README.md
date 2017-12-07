@@ -8,7 +8,7 @@ http://dont-be-afraid-to-commit.readthedocs.io/en/latest/git/commandlinegit.html
 
 
 
-Idea:
+**Idea:**
 
 A game based off of boolean logic. Turn based.
 
@@ -18,7 +18,7 @@ Object is to remove all pieces from opponent.
 
 
 
-Rules:
+**Rules:**
 
 AND and NOR gates can move up and down 3 spaces and diagonal 2.
 
@@ -31,3 +31,5 @@ Black squares represent a 1 and white squares represent a 0. Use these as inputs
 If output is a 1 and your opponent's output is a 0, you win and your opponent's piece is removed.
 
 If output of both is either a 1 or a 0, both pieces are removed.
+
+This was inspired by sagnew.

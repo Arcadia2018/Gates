@@ -29,7 +29,7 @@ public class Board {
         board[6][1] = new NOR("black");
         board[6][3] = new NOR("black");
         board[6][5] = new NOR("black");
-        
+
         //AND
         board[1][1] = new AND("white");
         board[1][3] = new AND("white");
@@ -97,7 +97,7 @@ public class Board {
         	if (actuallyMove){
         		board[moveArray[0]][moveArray[1]] = null;
         	}
-        	
+
         }else if(result == 2){
         	//code for deleting both pieces
         	if (actuallyMove){
@@ -109,21 +109,15 @@ public class Board {
     }
 
         //Rules dealing with pawns
- 
-    
-    /**
-     * Parses the user's string input for a move
-     * @param move
-     * @return An array of size 4 with the initial x, y positions and the final x, y positions in that order
-     */
+
     public static int[] parseInput(String move){
-    	
+
     	while ((move.length() != 5) && !(move.charAt(2) == (' '))) {
     		System.out.println("That's not a valid move. Try again.");
     		Scanner kb = new Scanner(System.in);
     		move = kb.nextLine();
     	}
-    	
+
         int[] returnArray = new int[4];
 
         String[] split = move.split(" ");
@@ -152,7 +146,7 @@ public class Board {
             default: return 8;
         }
     }
-    
+
     /**
      * Checks to see if any moves are possible. If not, then it is either a checkmate or stalemate, depending on whether or not anyone is currently in check.
      * @return
@@ -229,17 +223,6 @@ public class Board {
         return returnString;
     }
 
-    /**
-     * Checks to see if there is a stalemate
-     * @return true if stalemated, false otherwise
-     */
-    
-/*No Stalemate
-    public boolean staleMate(String color){
-        return false;
-    }
-*/
-    
     public String toString(){
         String string = "";
         int fileCount = 0;

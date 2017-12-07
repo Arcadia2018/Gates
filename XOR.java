@@ -14,7 +14,7 @@ public class XOR extends Piece{
 
 		if(Math.abs(newRow - currentRow) > 2 || Math.abs(newCol - currentCol) > 2){
 			return 3;
-			//hasMoved = true;
+		
 		} else {
 			if(hasMoved){
 				return 3;
@@ -57,7 +57,7 @@ public class XOR extends Piece{
 	}
 
 	public String toString(){
-		return " " + color.charAt(0) + "X";	
+		return " " + color.charAt(0) + "X";
 	}
 
 	public String oppColor(){
@@ -66,7 +66,7 @@ public class XOR extends Piece{
 			return "black";
 		else if (this.color != null && this.color == "black")
 			return "white";
-		else 
+		else
 			return null;
 	}
 	public boolean pieceValue(boolean yourVal, boolean oppVal){
