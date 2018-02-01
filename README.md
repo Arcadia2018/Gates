@@ -2,6 +2,7 @@
 
 This repo is used for out final project in CS362.
 
+May update with some new changes.
 
 **Idea:**
 
